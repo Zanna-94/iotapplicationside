@@ -141,6 +141,7 @@ iotfClient.on("connect", function () {
     var myData={'DelaySeconds' : 10};
     myData = JSON.stringify(myData);
     iotfClient.publishDeviceCommand(myTargetDeviceType, myTargetDeviceId, blinkCommand, "json", myData);
+    console.log("Send Command: " + blinkCommand + " to device: " + myTargetDeviceType + " --> " + myTargetDeviceId);
     /* ******* */
 
     /* on connect of IOTF, I initialize the tweetBot */
