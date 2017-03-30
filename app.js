@@ -195,7 +195,7 @@ function twitterBot () {
       /* Send command to device */
       var myData={'tweettext' : tweet.text};
       myData = JSON.stringify(myData);
-      iotfClient.publishDeviceCommand(myTargetDeviceType, myTtargetDeviceId, showTwitText, "json", myData);
+      iotfClient.publishDeviceCommand(myTargetDeviceType, myTargetDeviceId, showTwitText, "json", myData);
       /* ******* */
     });
 
